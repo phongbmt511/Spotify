@@ -1,0 +1,211 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "username": "phong",
+      "password": "phong",
+      "id": 2
+    },
+    {
+      "username": "hello",
+      "password": "hello",
+      "id": 3
+    },
+    {
+      "username": "huy",
+      "password": "huy",
+      "id": 4
+    },
+    {
+      "username": "ad",
+      "password": "ad",
+      "id": 5
+    }
+  ],
+  "items": [
+    {
+      "id": "1",
+      "name": "Chỉ Anh Hiểu Em",
+      "title": "Chỉ Anh Hiểu Em",
+      "singer": "Khắc Việt",
+      "image": "https://i.ytimg.com/vi/DhCyS58xACk/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/ZWZC8WBZ/128",
+      "avatar": "https://image.thanhnien.vn/w1024/Uploaded/2022/znetns/2022_09_06/khac-viet-7-6751.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Hẹn Một Mai",
+      "title": "Hẹn Một Mai",
+      "singer": "Bùi Anh Tuấn",
+      "image": "https://i.ytimg.com/vi/6Zw-SQurWUM/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/ZW78679U/128",
+      "avatar": "https://vcdn1-giaitri.vnecdn.net/2021/12/08/Bu-i-Anh-Tua-n-bie-n-ho-a-phong-ca-ch281A6852-1638969145.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=OFAxmmljkFZD0jr9XdUXNw"
+    },
+    {
+      "id": "3",
+      "name": "Lạc Nhau Có Phải Muôn Đời",
+      "title": "Lạc Nhau Có Phải Muôn Đời",
+      "singer": "ERIK",
+      "image": "https://i.ytimg.com/vi/l9XGXKDKUYk/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/ZW78D0FZ/128",
+      "avatar": "https://genk.mediacdn.vn/139269124445442048/2022/6/8/photo-1-16546875400131926850507-1654690957904-1654690958079349372212.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Chuyện Anh Vẫn Chưa Kể",
+      "title": "Chuyện Anh Vẫn Chưa Kể",
+      "singer": "Chi Dân",
+      "image": "https://i.ytimg.com/vi/n4JRQ5clT28/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/ZW8WCUW0/128",
+      "avatar": "https://sohanews.sohacdn.com/thumb_w/660/2019/11/5/88e03844-f5b8-47ba-ac97-e8980b498820-15729224483671798374354.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Anh Đã Quen Với Cô Đơn",
+      "title": "Anh Đã Quen Với Cô Đơn",
+      "singer": "SOOBIN",
+      "image": "https://i.ytimg.com/vi/X7sSE3yCNLI/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/ZW79FF97/128",
+      "avatar": "https://media.thieunien.vn/thumb/uploads/2021/11/16/-dang-nhu-soobin-hoang-son-tung-ra-bai-hat-ve-tinh-yeu-nhung-lai-duoc-phat-hien-bi-vien-thi_47294.jpeg"
+    },
+    {
+      "id": "6",
+      "name": "Não Cá Vàng",
+      "title": "Não Cá Vàng",
+      "singer": "OnlyC, Lou Hoàng",
+      "image": "https://i.ytimg.com/vi/BdqarGtAqkw/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/ZW79C8FO/128",
+      "avatar": "https://image.vtc.vn/files/chubi/2019/03/29/only-c-2-0225413.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Tòng Phu",
+      "title": "Tòng Phu",
+      "singer": "Keyo",
+      "image": "https://i.ytimg.com/vi/hjvRIpU6acQ/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/ZZFDIEB6/128",
+      "avatar": "https://static2.yan.vn/YanNews/2167221/202208/keyo-la-ai-tieu-su-chu-nhan-cua-nhieu-ban-hit-tren-tiktok-31cb386e.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Đã Lỡ Yêu Em Nhiều",
+      "title": "Đã Lỡ Yêu Em Nhiều",
+      "singer": "JustaTee",
+      "image": "https://i.ytimg.com/vi/KhTCatAKVpk/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/ZW8W6UEF/128",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Justatee_RapViet.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Ta Còn Yêu Nhau",
+      "title": "Ta Còn Yêu Nhau",
+      "singer": "Đức Phúc",
+      "image": "https://i.ytimg.com/vi/oiikgEzTotg/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/ZW8IC98I/128",
+      "avatar": "https://static-images.vnncdn.net/files/publish/2022/10/29/ntk-0062-660.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Chờ Anh Nhé",
+      "title": "Chờ Anh Nhé",
+      "singer": "Hoàng Dũng, Hoàng Rob",
+      "image": "https://i.ytimg.com/vi/kErpTLz39Ls/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/ZW7U90B6/128",
+      "avatar": "https://vcdn1-giaitri.vnecdn.net/2020/12/10/hoang-dung-2144-1607593083.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=lZqWWMMgbhLONNTlKgQPgQ"
+    },
+    {
+      "id": "11",
+      "name": "Giấu Đằng Sau",
+      "title": "Giấu Đằng Sau",
+      "singer": "Song Luân",
+      "image": "https://i.ytimg.com/vi/g1JvUhXMccE/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/ZW8I7AAI/128",
+      "avatar": "https://vcdn1-giaitri.vnecdn.net/2022/08/25/Song-Luan-2-1422-1661412791.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=XBMN6CXjd-xs7lQWCoaceg"
+    },
+    {
+      "id": "12",
+      "name": "Đừng Lo Nhé! Có Anh Đây",
+      "title": "Đừng Lo Nhé! Có Anh Đây",
+      "singer": "Thiên Tú",
+      "image": "https://i.ytimg.com/vi/xM9eGtrIGh8/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/Z6UUABUW/128",
+      "avatar": "https://showbizvn.vn/wp-content/uploads/2021/12/Soo-Jin-Thien-Tu-3.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Trót Trao Duyên",
+      "title": "Trót Trao Duyên",
+      "singer": "NB3 Hoài Bảo, CT",
+      "image": "https://i.ytimg.com/vi/zd66fekPTmg/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/Z6O6ZDDW/128",
+      "avatar": "https://static2.yan.vn/YanNews/2167221/202012/lan-dau-mv-lot-vao-trending-youtube-nb3-hoai-bao-vui-mung-khon-xiet-3ce0acdd.JPG"
+    },
+    {
+      "id": "14",
+      "name": "Sao Cũng Được",
+      "title": "Sao Cũng Được",
+      "singer": "Thành Đạt",
+      "image": "https://i.ytimg.com/vi/j4T0-huYsW4/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/Z6WZD78I/128",
+      "avatar": "https://nguoinoitieng.tv/images/nnt/101/2/bfwy.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Ai Rồi Cũng Sẽ Khác",
+      "title": "Ai Rồi Cũng Sẽ Khác",
+      "singer": "Hà Nhi",
+      "image": "https://i.ytimg.com/vi/MJu_cgM6tMs/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/Z6WZWIAC/128",
+      "avatar": "https://image.thanhnien.vn/w1024/Uploaded/2022/znetns/2022_08_08/ha-nhi-897.jpg"
+    },
+    {
+      "id": "16",
+      "name": "Quả Phụ Tướng",
+      "title": "Quả Phụ Tướng",
+      "singer": "Dunghoangpham",
+      "image": "https://i.ytimg.com/vi/UIlTTTdv7c0/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/Z6ZO8B0O/128",
+      "avatar": "https://nguoinoitieng.tv/images/nnt/103/2/bg6z.jpg"
+    },
+    {
+      "id": "17",
+      "name": "Cưới Hông Chốt Nha",
+      "title": "Cưới Hông Chốt Nha",
+      "singer": "Út Nhị Mino",
+      "image": "https://i.ytimg.com/vi/w_kgRzsEXeM/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/Z6WOZUCE/128",
+      "avatar": "https://s1.media.ngoisao.vn/news/2022/10/25/ut-nhi-ngoisaovn-6-ngoisaovn-w1436-h2048.jpg"
+    },
+    {
+      "id": "18",
+      "name": "Chàng Trai Của Em",
+      "title": "Chàng Trai Của Em",
+      "singer": "Duy Văn Phạm",
+      "image": "https://i.ytimg.com/vi/7kJkNDjgOE4/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/Z6UZAI8F/128",
+      "avatar": "https://nguoinoitieng.tv/images/nnt/104/3/bhw8.jpg"
+    },
+    {
+      "id": "19",
+      "name": "Ngủ Một Mình",
+      "title": "Ngủ Một Mình",
+      "singer": "HIEUTHUHAI",
+      "image": "https://i.ytimg.com/vi/STjzkjnLlZ4/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/Z6O6ZED0/128",
+      "avatar": "https://photo-cms-tpo.zadn.vn/w1000/Uploaded/2022/qqc-wqdun/2022_08_11/hieuthuhai-2-copy-4653.jpg"
+    },
+    {
+      "id": "20",
+      "name": "Yêu Người Có Ước Mơ",
+      "title": "Yêu Người Có Ước Mơ",
+      "singer": "buitruonglinh",
+      "image": "https://i.ytimg.com/vi/6r7jzy1LABY/maxresdefault.jpg",
+      "audio": "http://api.mp3.zing.vn/api/streaming/audio/Z6UBADAF/128",
+      "avatar": "https://ss-images.saostar.vn/wp700/pc/1671467583554/saostar-epyaza9znv8p6hxv.jpg"
+    }
+  ]
+}

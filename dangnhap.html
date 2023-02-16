@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Âm nhạc</title>
+    <link rel="stylesheet" href="dangnhap.css" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="login__container">
+        <h1>Đăng Nhập</h1>
+        <form>
+          <h5>Tên đăng nhập</h5>
+          <input type="text" class="input-login-username" />
+          <h5>Mật khẩu</h5>
+          <input type="password" class="input-login-password" />
+          <br />
+          <button type="submit" class="login__signInButton">Đăng Nhập</button>
+        </form>
+        <a href="dangki.html" class="login__registerButton"
+          >Tạo tài khoản mới</a
+        >
+      </div>
+    </div>
+    <script src="./musicapp.js"></script>
+    <script>
+      let apiUser = "http://localhost:5000/user";
+      //login
+      const username = document.querySelector(".input-login-username");
+      const password = document.querySelector(".input-login-password");
+      const bntLogin = document.querySelector(".login__signInButton");
+      // get user
+      const getUser = async () => {
+        const response = await fetch(apiUser);
+        const data = await response.json();
+        return data;
+      };
+      // login
+      bntLogin.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (username.value == "" || password.value == "") {
+          alert("Vui lòng nhập tên đăng nhập và mật khẩu !!!");
+        } else {
+          getUser().then((data) => {
+            const user = data.find(
+              (user) =>
+                user.username == username.value &&
+                user.password == password.value
+            );
+            if (user) {
+              alert("Đăng nhập thành công !!!");
+              window.location.href = "trangchu.html";
+            } else {
+              alert("Đăng nhập thất bại !!!");
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

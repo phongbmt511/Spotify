@@ -1,0 +1,403 @@
+/* ĐỊNH DẠNG CƠ BẢN CHO MỘT TRANG WEB */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ------------------CSS NGHE NHẠC ---------------------- */
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
+    180.3deg,
+    rgba(214, 224, 255, 1) 37.2%,
+    rgba(254, 168, 168, 1) 137.3%
+  );
+}
+.music {
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 35px 15px 30px;
+  margin-top: 150px;
+}
+.singer {
+  font-size: 14px;
+  text-align: center;
+}
+.music-thumb {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 25px;
+}
+.music-thumb.is-playing {
+  animation: spinner 5s infinite linear;
+}
+.music-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100rem;
+  box-shadow: 0 0 0 3px #ffb86c, 0 0 0 6px white, 0 0 0 9px #ff6bcb;
+}
+.music-name {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 40px;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 40px;
+}
+.play {
+  position: relative;
+}
+.play:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to right bottom, #ff6bcb, #ffb86c);
+  transform: scale(1.5);
+  border-radius: 100rem;
+}
+.player-inner {
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+}
+.play-repeat,
+.play-back,
+.play-forward {
+  cursor: pointer;
+}
+.range {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%;
+  background: transparent; /* Otherwise white in Chrome */
+  margin-bottom: 20px;
+}
+.range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  background-color: #eeee;
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #20e3b2;
+  width: 15px;
+  height: 15px;
+  border-radius: 100rem;
+  margin-top: -8px;
+  box-shadow: 0 0 0 3px white, 0 0 0 6px rgba(100, 100, 111, 0.05);
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.play-repeat {
+  font-size: 20px;
+}
+/*-------------------------------------CSS FOOTER -------------------------------------------------*/
+.footer * {
+  box-sizing: border-box;
+}
+.footer {
+  padding: 70px 0 0;
+  background-color: rgb(30, 30, 30);
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1em;
+}
+.footer .cont {
+  max-width: 1170px;
+  margin: auto;
+}
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  color: rgb(255, 255, 255, 1);
+}
+.footer .row > div:nth-child(1) {
+  width: 35%;
+}
+.footer .row > div {
+  width: 20%;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-grow: 1;
+}
+
+.footer .row p {
+  margin: 20px 0;
+  color: rgb(255, 255, 255, 0.8);
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+
+.footer .row h4 {
+  background-color: rgb(118, 109, 244, 0.2);
+  color: rgb(118, 109, 244, 1);
+  width: fit-content;
+  border-radius: 7px;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
+.footer .row ul,
+.footer .row li {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 15px 0;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.footer .row li {
+  transform: translateX(-15px);
+}
+.footer .row li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 8px solid rgb(118, 109, 244);
+  border-bottom: 5px solid transparent;
+}
+.footer .row li:hover {
+  transform: translateX(0);
+}
+.footer .row ul a {
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.8);
+  margin-left: 15px;
+}
+
+.footer .row .socialButton {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 30px;
+}
+.footer .row .socialButton i {
+  font-size: 1.9em;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+  opacity: 0.5;
+  transform: translateY(0);
+}
+.footer .row .socialButton i:hover {
+  opacity: 1;
+  transform: translateY(-4px);
+}
+
+.footer .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  height: 80px;
+  background-color: rgb(10, 10, 10);
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 0.8em;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1170px) {
+  .footer .row > div {
+    width: 50% !important;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .footer .row > div {
+    width: 100% !important;
+  }
+}
+/* -------------------------------------------------------------------- */
+/* .cards-list {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: 100%;
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+} */
+/* -----------------------CSS CARD HEADER------------------------------- */
+.card_header {
+  margin: 20px;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+}
+.card_header_1 img {
+  cursor: pointer;
+  border-radius: 10px;
+}
+.card_header_2 img {
+  cursor: pointer;
+  border-radius: 10px;
+}
+.card_header_3 img {
+  cursor: pointer;
+  border-radius: 10px;
+}
+.card_header_4 img {
+  cursor: pointer;
+  border-radius: 10px;
+}
+/* -------------------CSS CARD LIST BODY ------------------------*/
+.card_list {
+  display: inline-flex;
+  margin: 48px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.card_list_image img {
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+}
+.card_list_1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card_list_title {
+  font-family: cursive;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 16px;
+}
+.card_list_title_singer {
+  font-size: 12px;
+  text-align: center;
+  font-family: cursive;
+  color: gray;
+  margin-top: 8px;
+}
+/* --------CSS THANH INPUT SEARCH--------------*/
+#search {
+  width: 500px;
+  border: 1px solid #00b4cc;
+  padding: 5px;
+  height: 30px;
+  border-radius: 5px;
+  color: #9dbfaf;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/* ----------CSS BUTTON LOG OUT---------- */
+.btn_logout {
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+  padding: 3px;
+  margin-left: 830px;
+}
+.btn_logout:hover {
+  background-color: #4caf50;
+  color: white;
+}
+/* ------------CSS  ------------ */

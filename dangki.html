@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Âm nhạc</title>
+    <link rel="stylesheet" href="dangki.css" />
+  </head>
+  <body>
+    <div class="signup">
+      <div class="signup__container">
+        <h1>Đăng Ký</h1>
+        <form action="">
+          <h5>Tên đăng ký</h5>
+          <input type="text" class="input-signup-username" />
+          <h5>Mật khẩu</h5>
+          <input type="password" class="input-signup-password" />
+          <br />
+          <button type="submit" class="signup__signInButton">Đăng Ký</button>
+        </form>
+        <a href="dangnhap.html" class="signup__registerButton"
+          >Quay lại đăng nhập</a
+        >
+      </div>
+    </div>
+    <script>
+      let apiUser = "http://localhost:5000/user";
+      const username = document.querySelector(".input-signup-username");
+      const password = document.querySelector(".input-signup-password");
+      const bntSignup = document.querySelector(".signup__signInButton");
+      // Đăng ký
+      bntSignup.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (username.value == "" || password.value == "") {
+          alert("Vui lòng nhập tên và mật khẩu để đăng kí !!!");
+        } else {
+          const user = {
+            username: username.value,
+            password: password.value,
+          };
+          fetch(apiUser, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(user),
+          })
+            .then((res) => res.json())
+            .then((data) => console.log(data));
+        }
+        alert("Đăng kí thành công !!!");
+      });
+    </script>
+  </body>
+</html>
